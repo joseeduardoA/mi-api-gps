@@ -1,0 +1,10 @@
+[
+  {
+    "Phone": 12345,
+    "Name": "Telefono de prueba",
+    "Lat": 19.05,
+    "Long": -98.22,
+    "Active": true,
+    "Party": false
+  }
+]
