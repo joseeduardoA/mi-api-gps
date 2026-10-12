@@ -113,8 +113,13 @@ app.put("/api/elementos/:phone", (req, res) => {
 
         // Solo aceptar campos autorizados.
         const permitidos = [
-            "Name", "Lat", "Long", "Active", "Party"
-        ];
+    "Name",
+    "Lat",
+    "Long",
+    "Active",
+    "Party",
+    "Mesenger"
+];
 
         for (const campo of permitidos) {
             if (Object.hasOwn(req.body, campo)) {
