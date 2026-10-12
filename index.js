@@ -52,7 +52,7 @@ app.get("/api/elementos", (req, res) => {
 // AGREGAR
 app.post("/api/elementos", (req, res) => {
     try {
-        const { Phone, Name, Lat, Long, Active, Party } = req.body;
+        const { Phone, Name, Lat, Long, Active, Mesenger } = req.body;
 
         if (
             !Number.isSafeInteger(Phone) ||
@@ -77,7 +77,7 @@ app.post("/api/elementos", (req, res) => {
             Lat: Lat ?? null,
             Long: Long ?? null,
             Active: Active ?? false,
-            Party: Party ?? 0
+            Mesenger: Mesenger ?? 0
         };
 
         elementos.push(nuevo);
